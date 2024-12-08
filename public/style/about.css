@@ -1,0 +1,392 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ebebeb;
+    /* --primary-color: rgb(191, 241, 241); */
+    --secondary-color: #18181a;
+
+} 
+
+@font-face {
+    font-family: poppin;
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype'),
+
+}
+
+@font-face {
+    font-family: mono;
+    src: url('../fonts/MartianMono-ExtraBold.ttf') format('truetype'),
+
+}
+
+@font-face {
+    font-family: tung;
+    src: url('../fonts/Tungsten-Bold.ttf') format('truetype'),
+
+}
+
+@font-face {
+    font-family: space;
+    src: url('../fonts/Space_Mono/SpaceMono-Regular.ttf') format('truetype'),
+
+}
+
+@font-face {
+    font-family: hel;
+    src: url('../fonts/helvectical/HelveticaNowDisplay-Medium.ttf') format('truetype'),
+
+}
+
+@font-face {
+    font-family: hel-thin;
+    src: url('../fonts/helvectical/HelveticaNowDisplay-Regular.ttf') format('truetype'),
+
+}
+
+
+html {
+    width: 100%;
+}
+
+.hero {
+    background-image: url(../img/about/Hero.svg) !important;
+}
+
+
+
+
+
+.section-1 {
+    height: fit-content;
+    padding: 1.5rem 2.5rem;
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 1rem;
+}
+
+.sub-section-1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 7rem;
+}
+
+.sub-section-1 .text h2 {
+    font-family: hel;
+    font-size: 1.05rem;
+}
+
+.sub-section-1 .images {
+    display: flex;
+    gap: .65rem;
+    align-self: center;
+
+}
+
+.sub-section-1 .images img {
+    width: 99vw;
+
+}
+
+
+
+/* sub-section-2 */
+
+
+.sub-section-2 {
+
+    font-family: hel-thin;
+    display: flex;
+    justify-content: end;
+    min-height: 20vh;
+}
+
+.sub-section-2>p {
+    /* font-family: her; */
+    font-size: .6rem;
+    width: 45%;
+    /* width: 80%; */
+    /* line-height: 1.4rem; */
+    /* text-transform: uppercase; */
+}
+
+
+/* section-3 */
+
+.section-3 {
+    min-height: 100vh;
+    padding: .5rem 2.5rem;
+
+    background-color: var(--primary-color);
+    display: flex;
+    gap: 1rem;
+}
+
+.section-3 .image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.section-3 .text {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.section-3 .image img {
+    width: 20rem;
+    height: 23rem;
+}
+
+.section-3 .text .row {
+    display: flex;
+    gap: 2rem;
+    /* justify-content: center; */
+    align-items: end;
+    width: 25rem;
+    
+}
+
+.section-3 .text .row p {
+    font-family: space;
+    font-size: .5rem;
+    /* align-self: end !important; */
+    position: relative;
+    bottom: .3rem;
+    text-align: left;
+    flex: 1;
+}
+
+.section-3 .row .tag {
+    width: 5rem;
+    /* Adjust this width as per your design */
+    text-align: left;
+   
+}
+
+
+.section-3 .text .row h1 {
+    font-family: tung;
+    font-size: 2rem;
+    margin: 0rem;
+    flex: 1;
+    justify-self: end;
+    /* text-align: right; */
+    position: relative;
+}
+
+
+.section-3 .row-2 h1 {
+    text-decoration: underline;
+}
+
+.section-3 .row-4 h1 {
+    display: flex;
+    gap: 1rem;
+}
+
+.section-3 .row-4 .span-1 {
+    position: relative;
+}
+.section-3 .row-4 .span-2 {
+    position: relative;
+    text-decoration: underline;
+}
+
+.section-3 .row-4 h1 .span-1 .cut {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.section-3 .row-5 {
+    align-items: start !important;
+
+}
+
+.section-3 .row-5 p {
+    top: .5rem;
+    bottom: none;
+}
+
+.section-3 .row-5 .heading {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.section-3 .row-5 .heading h1 {
+    line-height: 2rem;
+}
+
+.section-3 .row-5 .tag {}
+
+@media (max-width:1000px) {
+    .section-3 .text .row p {
+
+        font-size: .5rem;
+      
+    }
+    .section-3 .text .row h1 {
+
+        font-size: 1.8rem;
+    }
+    .section-3 .image img {
+        width: 18rem;
+        height: 21rem;
+    }
+    .section-1 .image{
+        flex: .8 !important;
+    }
+    .section-1 .text{
+        flex: 1.2 !important;
+    }
+    
+}
+@media (max-width:800px) {
+    .section-1 .sub-section-2 p{
+        width: 70%;
+    }
+    .section-1 .sub-section-1{
+        gap:5rem;
+    }
+    .section-3 .text .row p {
+
+        font-size: .5rem;
+      
+    }
+    .section-3 .text .row h1 {
+
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:760px) {
+    .section-3{
+        flex-direction: column;
+        padding: .5rem 1.5rem;
+    }
+    .section-3 .image img {
+        /* width: 800px; */
+        height: 80vw;
+        width: 90vw;
+    }
+    .section-3 .text .row {
+        align-items: center !important;
+        width: 20rem;  
+        margin-top: 1rem;
+        gap: 1rem;
+        margin-bottom: 1rem;
+        position: relative;
+        left: 1.5rem;
+}
+    .section-3  .text{
+        gap: 0rem;
+    }
+    .section-3 .text .row h1 {
+
+        font-size:2rem;
+        
+    }
+    .section-3 .text .row p {
+
+        font-size: .6rem;
+    }
+
+}
+
+@media (max-width:660px) {
+    .section-1{
+        padding: 1.5rem 1rem;
+
+    }
+    .section-1 .sub-section-2 p{
+        width: 100%;
+    }
+    .section-1 .sub-section-1{
+        gap:4rem;
+    }
+    .sub-section-1 .text h2 {
+        font-family: hel;
+           font-size: 4.5vw;
+    }
+}
+
+@media (max-width:500px) {
+    .section-3{
+        margin-right: 0rem;
+        margin-left: 0rem;
+    }
+    .section-3 .image img {
+        /* width: 800px; */
+        height: 100vw;
+        width: 100vw;
+    }
+    .section-3 .text .row{
+        width: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+        /* left: unset; */
+    }
+    .section-3 .text .row h1 {
+
+        font-size:1.4rem;
+        flex: unset !important;
+        width: 10.5rem;
+    }
+    .section-3 .text .row p {
+
+        font-size: .45rem;
+        flex: unset !important;
+    }
+}
+
+@media (max-width:360px) {
+    .section-3 .text{
+        justify-content: start;
+    }
+    .section-3 .text .row{
+        width: 15rem;
+        margin-left: auto;
+        margin-right: auto;
+        /* align-items: start  ; */
+        /* left: unset; */
+    }
+    .section-3 .text .row h1 {
+
+        font-size:7vw;
+        flex: unset !important;
+        width: 10.5rem;
+    }
+    .section-3 .text .row p {
+
+        font-size: .4rem;
+        flex: unset !important;
+    }
+}
+
+@media (max-width:300px) {
+    .section-3 .text .row{
+        left: 3vw;
+    }
+    .section-3 .text .row h1 {
+
+        font-size:6.4vw;
+        flex: unset !important;
+        width: 9.5rem;
+    }
+}

@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ebebeb;
+    /* --primary-color: rgb(191, 241, 241); */
+    --secondary-color: #18181a;
+
+}
+
+@font-face {
+    font-family: poppin;
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype'),
+
+}
+
+@font-face {
+    font-family: mono;
+    src: url('../fonts/MartianMono-ExtraBold.ttf') format('truetype'),
+
+}
+
+@font-face {
+    font-family: tung;
+    src: url('../fonts/Tungsten-Bold.ttf') format('truetype'),
+
+}
+
+@font-face {
+    font-family: space;
+    src: url('../fonts/Space_Mono/SpaceMono-Regular.ttf') format('truetype'),
+
+}
+
+@font-face {
+    font-family: hel;
+    src: url('../fonts/helvectical/HelveticaNowDisplay-Medium.ttf') format('truetype'),
+
+}
+
+@font-face {
+    font-family: hel-thin;
+    src: url('../fonts/helvectical/HelveticaNowDisplay-Regular.ttf') format('truetype'),
+
+}
+
+@font-face {
+    font-family: wide;
+    src: url('../fonts/druk-wide-bold/DrukWideBold.ttf') format('truetype'),
+
+}
+
+
+html {
+    width: 100%;
+}
+
+html,
+body {
+    font-size: 24px;
+    overflow-x: clip;
+    background-color: var(--primary-color);
+}
+
+.hero {
+    background-image: url(../img/main.png);
+    height: 120vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    font-size: 24px;
+    align-items: end;
+}
+
+
+.nav-div {
+    padding: 0em 2.5em;
+    padding-bottom: .7em;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+nav .menu {
+    height: fit-content;
+}
+
+nav .menu i {
+    font-size: 1.4em;
+    color: var(--primary-color);
+
+    &:hover {
+        cursor: pointer;
+    }
+
+    font-weight: lighter;
+}
+
+nav .content {
+    display: flex;
+    color: var(--primary-color);
+    align-items: center;
+    gap: 3.5em;
+}
+
+nav .text {
+    font-size: .45em;
+    height: fit-content;
+    font-family: space;
+}
+
+nav .text .favicons {
+    display: inline-flex;
+    gap: .1em;
+}
+
+nav .text .favicons img {
+    width: .5em;
+    height: .5em;
+}
+
+nav .text-2 {
+    text-align: right;
+}
+
+nav .logo {
+    width: 5em;
+    height: 4em;
+}
+
+nav .logo img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* side-nav */
+nav .side-nav {
+    position: fixed;
+    top: 0em;
+    right: 0;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    /* width: 55vw; */
+    height: 100vh;
+    z-index: 999;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 3em;
+    padding-left: 2rem;
+    /* font-size: 15px; */
+    transition: all 5s ease-out;
+}
+
+nav .side-nav a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-size: 2em;
+    font-family: wide;
+    text-transform: uppercase;
+    transition: all .4s ease;
+   
+    &:hover{
+        /* text-decoration: underline; */
+        -webkit-text-stroke: 1px  var(--primary-color) !important;
+        color: var(--secondary-color);
+    }
+
+}
+
+
+nav .side-nav ul {
+    display: flex;
+    flex-direction: column;
+    /* gap: .3rem; */
+    list-style-type: none;
+}
+
+nav .side-nav ul li {
+    text-decoration: none;
+    transition: all .4s ease;
+    &:hover{
+        background-color: #ffffff54;
+    }
+}
+
+nav .side-nav .cross{
+    font-family: space;
+    position: absolute;
+    top: .4em;
+    right: 1.6em;
+    font-size: 1.6em;
+    font-weight: lighter;
+    cursor: pointer;
+    
+    width: 1.6em;
+    height: 1.6em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: .3em;
+    transition: all .2s ease;
+    &:hover{
+        background-color: var(--primary-color);
+        color: var(--secondary-color);
+    }
+}
+
+nav .side-nav .cross p{
+    position: relative;
+    bottom: .25em;
+}
+
+
+.hide{
+    display: none !important; 
+}
+
+@media (max-width:1100px) {
+    nav{
+        font-size: 21px;
+    }
+    .nav-div{
+        padding: 0em 2em;
+
+    }
+}
+@media (max-width:950px) {
+    nav{
+        font-size: 18px;
+    }
+    .nav-div{
+        padding: 0em 2em;
+
+    }
+    .nav-div .content{
+        gap: 2rem;
+    }
+}

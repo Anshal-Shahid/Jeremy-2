@@ -1,0 +1,258 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #ebebeb;
+    /* --primary-color: rgb(191, 241, 241); */
+    --secondary-color: #18181a;
+
+}
+
+@font-face {
+    font-family: poppin;
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype'),
+
+}
+
+@font-face {
+    font-family: mono;
+    src: url('../fonts/MartianMono-ExtraBold.ttf') format('truetype'),
+
+}
+
+@font-face {
+    font-family: tung;
+    src: url('../fonts/Tungsten-Bold.ttf') format('truetype'),
+
+}
+
+@font-face {
+    font-family: space;
+    src: url('../fonts/Space_Mono/SpaceMono-Regular.ttf') format('truetype'),
+
+}
+
+@font-face {
+    font-family: hel;
+    src: url('../fonts/helvectical/HelveticaNowDisplay-Medium.ttf') format('truetype'),
+
+}
+
+@font-face {
+    font-family: hel-thin;
+    src: url('../fonts/helvectical/HelveticaNowDisplay-Regular.ttf') format('truetype'),
+
+}
+
+
+html {
+    width: 100%;
+}
+
+
+footer {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    min-height: 50vh;
+    display: flex;
+    padding: 2.5rem 2.5rem;
+    justify-content: space-between;
+    gap: 2rem;
+    align-items: end;
+    overflow-wrap:break-word ;
+}
+
+footer .sub-section {
+    flex: 1;
+    /* height: 100%; */
+    flex-direction: column;
+}
+
+footer .sub-section-1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0rem;
+    height:12rem ;
+    width: 17rem;
+    /* background-color: red; */
+    justify-content: space-between;
+
+}
+
+
+footer .sub-section-2 {
+    /* flex: 1.3; */
+    width: 19rem;
+    display: flex;
+    height:18rem ;
+
+}
+
+footer .sub-section-3 {
+    display: flex;
+    width: 17rem;
+    height:12rem ;
+
+    flex-direction: column;
+
+}
+
+
+/* .sub-section-1 ******************************/
+
+/* .row-1 */
+footer .sub-section-1 .row-1 {
+    display: flex;
+    justify-content: space-between;
+    font-family: space;
+    padding: 0rem 1.5rem;
+
+}
+
+
+/* .row-2 */
+
+footer .sub-section-1 .row-2 {
+    font-family: hel-thin;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .sub-section-1 .row-2 .line {
+    font-size: .8rem;
+    display: flex;
+    gap: 4rem;
+    width: 100%;
+    justify-content: center;
+    padding: 0rem 1rem;
+    padding-left: 2rem;
+}
+
+footer .sub-section-1 .row-2 .line :nth-child(1) {
+    /* text-align: left; */
+    flex: 1;
+}
+
+footer .sub-section-1 .row-2 .line :nth-child(2) {
+    /* text-align: left; */
+    flex: 1;
+}
+
+
+/* .row-3 */
+
+footer .sub-section-1 .row-3 {}
+
+footer .sub-section-1 .row-3 p {
+    font-size: .73rem;
+    font-family: space;
+    text-align: center;
+}
+
+
+
+
+
+/* .sub-section-2 ******************************/
+
+footer .sub-section-2 {
+    border: 1px solid var(--primary-color);
+    /* width: 18rem;
+    min-height: 14rem; */
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer .sub-section-2 .row-1 {
+    border-bottom: 1px solid var(--primary-color);
+    width: 100%;
+    font-size: .8rem;
+    font-family: hel-thin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0rem;
+}
+
+footer .sub-section-2 .row-2 {
+    border-bottom: 1px solid var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer .sub-section-2 .row-2 img {
+    width: 60%;
+    height: 100%;
+    /* border-bottom: 1px solid var(--primary-color); */
+}
+
+footer .sub-section-2 .row-3 {
+    font-size: .8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: hel-thin;
+    height: 100%;
+    padding: .4rem;
+    /* background-color: yellow; */
+    padding: .6rem .8rem;
+}
+
+footer .sub-section-2 .row-3 p {
+    font-family: hel-thin;
+    font-size: .7rem !important;
+}
+
+
+
+
+/* .sub-section-3 ***************************/
+
+footer .sub-section-3{
+    justify-content: space-between;
+}
+footer .sub-section-3 .row-1 {
+    display: flex;
+    justify-content: space-between;
+    font-family: space;
+    padding: 0rem 1.5rem;
+}
+
+
+/* .row-2 */
+
+footer .sub-section-3 .row-2 {
+    font-family: hel-thin;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .sub-section-3 .row-2{
+    display: grid;
+    place-items: center;
+}
+footer .sub-section-3 .row-2 img{
+    width:10rem;
+    height: 9rem;
+
+}
+
+
+
+
+/* .row-3 */
+
+
+footer .sub-section-3 .row-3 p {
+    font-size: .73rem;
+    font-family: space;
+    text-align: center;
+}
+
+
+
